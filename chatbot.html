@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Travell ChatbotExample</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+<body>
+
+<div class="container">
+  <div class="jumbotron">
+    <h1>My First travel chatbot</h1>
+    <p>Resize this responsive page to see the effect!</p> 
+    <script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "e57c9f20-58c3-434a-8cb9-d7af1123e2df", // The ID of this integration.
+      region: "au-syd", // The region your integration is hosted in.
+      serviceInstanceID: "d356dc5a-3cd4-45df-9ef1-cd425fe710e9", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Design by </h3>
+      
+      <p>Arpeet Rasal</p>
+    </div>
+   
+  </div>
+</div>
+
+</body>
+</html>
